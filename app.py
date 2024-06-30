@@ -47,13 +47,13 @@ classifier = load_model('80_resnet_attn.h5')
 
 
 
-# @app.get('/')
-# def index():
-#     return {'message': 'Hello, World'}
+@app.get('/')
+def index():
+    return {'message': 'Hello, World'}
 
-# @app.get('/{name}')
-# def get_name(name: str):
-#     return {'Testing..': f'{name}'}
+@app.get('/{name}')
+def get_name(name: str):
+    return {'Testing..': f'{name}'}
 
 
 @app.post('/predict')
